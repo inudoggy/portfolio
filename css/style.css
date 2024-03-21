@@ -1,0 +1,452 @@
+.title {
+  color: rgba(4, 0, 255, 0.801);
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --max-width:1080px;
+  --offset: 20px;
+}
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: #00f7ff;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  word-break: break-all;
+  background-image: url(../img/background/white_00118.jpg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  /* vertical-align: bottom; */
+  display: block;
+}
+
+.inner {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/*ヘッダー*/
+#header {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 300px;
+  background-size: auto 100%;
+  background: center url(../img/background/black_00082.jpg);
+}
+
+#header .logo {
+  display: block;
+}
+
+#header .logo-title {
+  font-size: 94px;
+  color: #9b1414;
+  line-height: 1;
+  letter-spacing: -2px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+#header .logo-desc {
+  display: block;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px;
+  color: #9b1414;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+/*セクションジャンプ*/
+#jump-sec{
+  padding: 5px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  z-index: 0;
+  text-align: center;
+  background-color: #252525;
+}
+
+#jump-sec ul{
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #252525;
+}
+
+#jump-sec li{
+  list-style: none;
+  font-size: 24px;
+  padding: 0 20px;
+}
+
+#jump-sec li a{
+  color: #252525;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(201, 201, 201);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+
+/* プロフィールセクション */
+.section01 {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: rgb(250, 250, 250);
+}
+
+.section01 .inner {
+  padding: 40px 10px 10px 10px;
+}
+
+.section01 .section01-title-block {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section01 .section01-title {
+  font-family: "新丸ゴ R JIS2004 AP","Shin Maru Go R JIS2004 AP";
+  letter-spacing: -0.01em;
+  display: inline-block;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #010033;
+}
+
+.section01 .section01-title-css{
+  color: #010033;
+}
+
+.profile-column {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+}
+
+.profile-column-img {
+  width: 30%;
+}
+
+.profile-column-img img {
+  margin: 0 auto;
+  border-radius: 25%;
+}
+
+.profile-column-doc {
+  width: 50%;
+}
+
+/* SKILLセクション */
+.section02 {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.section02 .inner {
+  padding: 40px 10px 10px 10px;
+}
+
+.section02 .section02-title-block {
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+
+.section02 .section02-title {
+  font-family: "新丸ゴ R JIS2004 AP","Shin Maru Go R JIS2004 AP";
+  letter-spacing: -0.01em;
+  display: inline-block;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #010033;
+}
+
+.section02 .section02-title-css{
+  color: #000b41;;
+}
+
+#skill .skill-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+}
+
+#skill .skill-card {
+  flex-basis: 46%;
+  /* margin-bottom: 50px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* display: grid; */
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+}
+
+#skill .skill-card:last-child {
+  flex-basis: 100%;
+}
+
+#skill .skill-icon {
+  flex-basis: 75px;
+}
+
+#skill .skill-icon img {
+  width: 75px;
+}
+
+#skill .skill-desc {
+  flex-basis: calc(100% - 75px - 30px);
+  padding: 0.5em 1em;
+  text-align: center;
+  margin: 2em 0;
+  color: #1b2038;
+  background: white;
+  border-top: solid 5px #1b2141;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+#skill .skill-desc-title {
+  margin: 10px;
+  font-size:26px;
+  padding: 12px;
+  font-weight: bold;
+}
+
+#skill .skill-desc-title i{
+  margin-right: 12px;
+}
+
+#skill .rate {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  font-size: 20px;
+}
+
+#skill .rate:before, #skill .rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+
+#skill .rate:before {
+  color: #ddd;
+}
+
+#skill .rate:after {
+  color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#skill .rate1:after {
+  width: 20px;
+}
+
+#skill .rate2:after {
+  width: 40px;
+}
+
+#skill .rate3:after {
+  width: 60px;
+}
+
+#skill .rate4:after {
+  width: 80px;
+}
+
+#skill .rate5:after {
+  width: 100px;
+}
+
+
+/* WORKセクション */
+.section03 {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: rgb(250, 250, 250);
+}
+
+.section03 .inner {
+  padding: 40px 10px 10px 0px;
+}
+
+.section03 .section03-title-block {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section03 .section03-title {
+  font-family: "新丸ゴ R JIS2004 AP","Shin Maru Go R JIS2004 AP";
+  letter-spacing: -0.01em;
+  display: inline-block;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #010033;
+}
+
+.section03 .section03-title-css{
+  color: #010033;
+}
+
+
+/* CONTACTセクション */
+.section04 {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.section04 .inner {
+  padding: 40px 10px 10px 0px;
+}
+
+.section04 .section04-title-block {
+  text-align: center;
+  /* margin-bottom: 10px; */
+}
+
+.section04 .section04-title {
+  font-family: "新丸ゴ R JIS2004 AP","Shin Maru Go R JIS2004 AP";
+  letter-spacing: -0.01em;
+  display: inline-block;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #010033;
+}
+
+.section04 .section04-title-css{
+  color: #010033;
+}
+
+.section04 .section04-maillink{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+
+/*フッター*/
+#footer {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #252525;
+}
+
+#footer .inner {
+  padding: 30px;
+}
+
+#footer .footer-link ul {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+#footer .footer-link li {
+  list-style: none;
+  font-size: 24px;
+  padding: 0 20px;
+}
+
+#footer .footer-link li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+#footer .copyright {
+  font-size: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+/*作品並べるコンテナ用css*/
+.container {
+  display:grid;
+  grid-template-columns: 1fr min(var(--max-width), 100% - var(--offset) * 2) 1fr;
+}
+
+.container > * {
+  grid-column: 2;
+}
+
+.gallery {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: inherit;
+  /* ↓スクロールバーを表示したいときに */
+  /* overflow-x: scroll; */
+}
+
+.wrapper {
+  display: flex;
+  align-items: end;
+  grid-column: 2;
+}
+
+.wrapper div{
+  padding: 10px;
+}
+
+.wrapper::after {
+  content:"";
+  padding-inline-end: var(--offset);
+}
